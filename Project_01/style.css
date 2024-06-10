@@ -55,10 +55,56 @@
     background-color: #D8EFD3;
     height: 250px;
     width: 400px;
-    border-radius: 25px;
+    border-radius: 75px 0px 75px 0px;
     display: flex;
     align-items: center;
 }
 .caption p{
     padding: 50px;
+    color: #55AD9B;
+}
+/* ++++++++++++++++ */
+#first{
+    height: 400px;
+    background-color: #D8EFD3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#sec{
+    height: 400px;
+    background-color: #F1F8E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#firsthead{
+    background-color: #D8EFD3;
+    justify-content: flex-end;
+}
+#firstcap{
+    background-color: #F1F8E8;
+    border-radius: 0px 75px 0px 75px ;
+}
+/*++++++++++ SKILLS ++++++++ */
+.caption li{
+    color: #55AD9B;
+    position: relative;
+    left: 75px;
+}
+.caption ul{
+    
+}
+
+/* +++++++++++++++++++ END ++++++++++++++++++++++++ */
+
+.lastLine{
+    background-color: #55AD9B;
+    height: 50px;
+    color: #F1F8E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-weight: 700;
 }
