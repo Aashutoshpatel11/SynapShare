@@ -42,7 +42,7 @@
 }
 .welcome{
     background-color: #F1F8E8;
-    height: 250px;
+    height: 100px;
     width: 400px;
     color: #55AD9B;
     font-size: 35px;
@@ -50,6 +50,8 @@
     text-align: left;
     display: flex;
     align-items: center;
+    border-left: 8px solid #55AD9B ;
+    padding-left: 1rem;
 }
 .caption{
     background-color: #D8EFD3;
@@ -81,6 +83,10 @@
 #firsthead{
     background-color: #D8EFD3;
     justify-content: flex-end;
+    border-left: none ;
+    padding-left: none;
+    border-right: 8px solid #55AD9B ;
+    padding-right: 1rem;
 }
 #firstcap{
     background-color: #F1F8E8;
@@ -115,9 +121,4 @@
 }
 .qualification_details li{
     font-size: .8rem;
-}
-/* +++++++++++++ Animations +++++++++++++++ */
-
-#welcome_animation:hover{
-    
 }
