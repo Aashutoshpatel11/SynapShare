@@ -108,3 +108,16 @@
     font-style: italic;
     font-weight: 700;
 }
+/* +++++++++++++ Quallification +++++++++++++++ */
+.qualification_details{
+    display: flex;
+    justify-content: center;
+}
+.qualification_details li{
+    font-size: .8rem;
+}
+/* +++++++++++++ Animations +++++++++++++++ */
+
+#welcome_animation:hover{
+    
+}
