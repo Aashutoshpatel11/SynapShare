@@ -21,10 +21,10 @@ void check( char game_board[3][3] , int &game , char name){
         game_board[0][2]=='x' && game_board[1][2]=='x' && game_board[2][2]=='x' || game_board[0][2]=='o' && game_board[1][2]=='o' && game_board[2][2]=='o' ||
         game_board[0][0]=='x' && game_board[1][1]=='x' && game_board[2][2]=='x' || game_board[0][0]=='o' && game_board[1][1]=='o' && game_board[2][2]=='o' ||
         game_board[2][0]=='x' && game_board[1][1]=='x' && game_board[0][2]=='x' || game_board[2][0]=='o' && game_board[1][1]=='o' && game_board[0][2]=='o')
-        {
-            cout<<"Status: "<<name<<" Won The Game"<<endl;
-            game = 1;
-        }
+    {
+        cout<<"Status: "<<name<<" Won The Game"<<endl;
+        game = 1;
+    }
     else if(game_board[0][0]!='_' &&
             game_board[0][1]!='_' &&
             game_board[0][2]!='_' &&
@@ -34,10 +34,11 @@ void check( char game_board[3][3] , int &game , char name){
             game_board[2][0]!='_' &&
             game_board[2][1]!='_' &&
             game_board[2][2]!='_' )
-            {
-            cout<<"Status: draw"<<endl;
-            game = 1;
-    }else{
+    {
+        cout<<"Status: draw"<<endl;
+        game = 1;
+    }
+    else{
         cout<<"Status: Ongoing";
     }
 }
