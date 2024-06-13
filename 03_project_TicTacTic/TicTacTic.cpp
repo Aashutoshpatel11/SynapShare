@@ -54,6 +54,9 @@ int main(){
         game_board [position/3][position%3]='x';
         print(game_board);
         check( game_board , game , 'A' );
+        if( game==1 ){
+            break;
+        }
 
         cout<<endl<<"Player B input: ";
         cin>>position;
@@ -62,6 +65,15 @@ int main(){
         print(game_board);
         check( game_board , game , 'B');
 
+    }
+
+    bool playAgain;
+    cout<<endl<<"Do you wants to play again? (true/false) : ";
+    cin>>playAgain;
+    if(playAgain==1){
+        main();
+    }else{
+        cout<<" THANK FOR PLAYING "<<endl<<endl;
     }
 
     return 0;
