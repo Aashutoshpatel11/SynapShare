@@ -1,5 +1,4 @@
 #include<iostream>
-#include<map>
 using namespace std;
 
 void print( char game_board[3][3] ){
@@ -11,36 +10,36 @@ void print( char game_board[3][3] ){
         }
         cout<<"|"<<endl;
     }
-    cout<<"-------";
+    cout<<"-------"<<endl;;
 }
 
 void check( char game_board[3][3] , int &game , char name){
-    if( game_board[0][0]==game_board[0][1]==game_board[0][2] ||
-        game_board[1][0]==game_board[1][1]==game_board[1][2] ||
-        game_board[2][0]==game_board[2][1]==game_board[2][2] ||
-        game_board[0][0]==game_board[1][0]==game_board[2][0] ||
-        game_board[0][1]==game_board[1][1]==game_board[2][1] ||
-        game_board[0][2]==game_board[1][2]==game_board[2][2] ||
-        game_board[0][0]==game_board[1][1]==game_board[2][2] ||
-        game_board[2][0]==game_board[1][1]==game_board[0][2] )
+    if( game_board[0][0]=='x' && game_board[0][1]=='x' && game_board[0][2]=='x' || game_board[0][0]=='o' && game_board[0][1]=='o' && game_board[0][2]=='o' ||
+        game_board[1][0]=='x' && game_board[1][1]=='x' && game_board[1][2]=='x' || game_board[1][0]=='o' && game_board[1][1]=='o' && game_board[1][2]=='o' ||
+        game_board[2][0]=='x' && game_board[2][1]=='x' && game_board[2][2]=='x' || game_board[2][0]=='o' && game_board[2][1]=='o' && game_board[2][2]=='o' ||
+        game_board[0][0]=='x' && game_board[1][0]=='x' && game_board[2][0]=='x' || game_board[0][0]=='o' && game_board[1][0]=='o' && game_board[2][0]=='o' ||
+        game_board[0][1]=='x' && game_board[1][1]=='x' && game_board[2][1]=='x' || game_board[0][1]=='o' && game_board[1][1]=='o' && game_board[2][1]=='o' ||
+        game_board[0][2]=='x' && game_board[1][2]=='x' && game_board[2][2]=='x' || game_board[0][2]=='o' && game_board[1][2]=='o' && game_board[2][2]=='o' ||
+        game_board[0][0]=='x' && game_board[1][1]=='x' && game_board[2][2]=='x' || game_board[0][0]=='o' && game_board[1][1]=='o' && game_board[2][2]=='o' ||
+        game_board[2][0]=='x' && game_board[1][1]=='x' && game_board[0][2]=='x' || game_board[2][0]=='o' && game_board[1][1]=='o' && 1game_board[0][2]=='o')
         {
             cout<<"Status: "<<name<<" Won The Game"<<endl;
             game = 1;
         }
-    else if(game_board[0][0]!='-' ||
-            game_board[0][1]!='-' ||
-            game_board[0][2]!='-' ||
-            game_board[1][0]!='-' ||
-            game_board[1][1]!='-' ||
-            game_board[1][2]!='-' ||
-            game_board[2][0]!='-' ||
-            game_board[2][1]!='-' ||
+    else if(game_board[0][0]!='-' &&
+            game_board[0][1]!='-' &&
+            game_board[0][2]!='-' &&
+            game_board[1][0]!='-' &&
+            game_board[1][1]!='-' &&
+            game_board[1][2]!='-' &&
+            game_board[2][0]!='-' &&
+            game_board[2][1]!='-' &&
             game_board[2][2]!='-' )
             {
-            cout<<"Status: Draw"<<endl;
+            cout<<"Status: draw"<<endl;
             game = 1;
     }else{
-        cout<<"Status: Ongoing"
+        cout<<"Status: Ongoing";
     }
 }
 
@@ -52,12 +51,14 @@ int main(){
     while( game!=1 ){
         cout<<"Player A input: "<<endl;
         cin>>position;
+        position--;
         game_board [position/3][position%3]='x';
         print(game_board);
         check( game_board , game , 'A' );
 
         cout<<"Player B input: "<<endl;
         cin>>position;
+        position--;
         game_board [position/3][position%3]='o';
         print(game_board);
         check( game_board , game , 'B');
