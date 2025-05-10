@@ -1,2 +1,2 @@
-# Code-Soft
-Internship at Codesoft
+# Synapshare
+A student collaborative platform
