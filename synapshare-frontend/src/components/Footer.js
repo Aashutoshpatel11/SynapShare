@@ -28,7 +28,7 @@ function Footer() {
               Connect, Learn, and Share Knowledge
             </p>
             <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">
-              © 2025 SynapShare. Made by Kamlesh Porwal
+              © 2025 SynapShare. Made by Aashutosh Patel
             </p>
           </div>
 
@@ -48,7 +48,7 @@ function Footer() {
                 <FiGlobe size={18} />
               </motion.a>
               <motion.a
-                href="https://github.com/kamleshp214"
+                href="https://github.com/Aashutoshpatel11"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
