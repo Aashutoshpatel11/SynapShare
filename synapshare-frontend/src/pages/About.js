@@ -42,12 +42,12 @@ function About() {
             Meet the Creator
           </h2>
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-            Kamlesh Porwal, a passionate Computer Science student from MIT
+            Aashutosh Patel, a passionate Computer Science student from MIT
             Ujjain, built SynapShare with a vision of tech-enabled education.
           </p>
           <div className="flex flex-wrap gap-3 mt-2">
             <a
-              href="mailto:porwalkamlesh5@gmail.com"
+              href="mailto:aashutoshpatel110@gmail.com@gmail.com"
               onClick={() => handleClick("Email")}
               className="bg-blue-600 text-white text-sm font-medium py-2 px-4 rounded-full hover:bg-blue-700 transition"
             >
