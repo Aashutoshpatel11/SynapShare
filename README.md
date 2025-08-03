@@ -1,2 +1,3 @@
 # Synapshare
-A student collaborative platform
+A community platform for tech students
+
